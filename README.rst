@@ -1,4 +1,4 @@
-Template for the Read the Docs tutorial
+Read the Docs for ISUL
 =======================================
 
 This GitHub template includes fictional Python library
@@ -8,4 +8,3 @@ Read the tutorial here:
 
 https://docs.readthedocs.io/en/stable/tutorial/
 
-Test1
