@@ -16,12 +16,7 @@ typedef enum {
     OK = 0, ///< no error, succed
     InternalError, ///< library internal error
     ConnectionError, ///< netwotk connection error
-    ServerError, ///< server side error
-    Deactivated, ///< license was successfully deactivated
-    ActivationNotFound, ///< invalid activation id
-    ActivationCancelled, ///< activation cancelled by user
-    LicenseExpired, ///< license is expired
-    ValidationFailed ///< token broken, expired or signed with wrong key
+    ServerError ///< server side error
 } ValidationResult;
 
 typedef enum {
