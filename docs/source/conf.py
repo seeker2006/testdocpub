@@ -4,7 +4,7 @@
 
 import subprocess
 
-project = 'Lumache'
+project = 'ISUL'
 copyright = '2021, Graziella'
 author = 'Graziella'
 
