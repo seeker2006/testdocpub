@@ -32,52 +32,6 @@
 namespace ISUL {
 
     /*!
-        @brief Unique identifier for product, human readable, for example @cite PRISM
-     */
-    extern const std::string kProductID;
-
-    /*!
-        @brief Product version string
-     */
-    extern const std::string kProductVersion;
-
-    /*!
-        @brief Location (file system path) where to store received activation tokens
-     */
-    extern const std::string kLicenceStoragePath;
-
-    /*!
-        @brief Location (logging file path)
-     */
-    extern const std::string kLogFilePath;
-
-    /*!
-        @brief Number of offline application launches (PhoneHome grace period parameter)
-     */
-    extern const std::string kOfflineAppLaunches;
-
-    /*!
-        @brief Time of last successfull connection to license server (PhoneHome grace period parameter)
-     */
-    extern const std::string kLastPassConnect;
-
-    /*!
-        @brief Time of starting last day expiration (PhoneHome grace period parameter)
-     */
-    extern const std::string kLastDayExpiration;
-
-    /*!
-        @brief Names of Phone Home events
-     */
-    extern const std::string kPHO_AppLaunch;
-    extern const std::string kPhoneHomeEventNameAppExit;
-    extern const std::string kPHO_Activation;
-    extern const std::string kPHO_AutoLaunch;
-    extern const std::string kPHO_About;
-    extern const std::string kPHO_Background;
-    extern const std::string kPHO_Renew;
-
-    /*!
         @brief Type for dictionary of values
      */
     typedef std::map<std::string, std::string> Properties;
@@ -96,21 +50,6 @@ namespace ISUL {
          */
         virtual void* GetContentView() = 0;
         
-        /*!
-            @brief Control wether ISUL should show WebUI in the case phone home failed
-            @param status Status of previous condition, which leads to this call
-            @return true if client whould like to allwo WebUI or false if not
-         */
-        virtual bool ShouldStartActivation(Status::ptr status) { return true; }
-
-        /*!
-            @brief Called after the validation has finised.
-            @param status Contains status of validation operation
-         */
-        virtual void OnValidationFinished(Status::ptr status) {}
-        
-        virtual void OnServerLog(ServerStatus status, LogSeverity severity, const std::string& message, const std::string& content) {}
-
         /*!
             @brief Called if client select old axtivation method, implemented independently in the client application
          */
@@ -135,8 +74,6 @@ namespace ISUL {
          */
         static Manager::ptr Create(const std::string& uiURL, const std::string& apiURL, const Properties& productInfo, Delegate::weak_ptr delegate);
         
-        static Manager::ptr Create(const std::string& uiURL, const std::string& offlineUIURL, const std::string& apiURL, const Properties& productInfo, Delegate::weak_ptr delegate);
-
         /*!
             @brief  Validate current activation state for specifed product
             Shows sign-in dialog in the case activation state is invalid
@@ -144,22 +81,7 @@ namespace ISUL {
             @param reason platform specific UI context, where WebUI will be rendered
          */
         void Validate(const std::string& reason);
-
-        /*!
-            @brief Return user friendly information from actyivation tokens as dictionary
-            @param info returned license info
-         */
-        void CopyLicenseInfo(Properties& info);
         
-        
-        
-
-        /*!
-            @brief Forces to renew a license file with current product info
-            (offline PhoneHome parameters)
-        */
-        void UpdateLicenseInfo();
-
         /*!
             @brief Deactivate current activation
             @param callback lient provided endpoint, called as a result of Server request completion
@@ -171,7 +93,6 @@ namespace ISUL {
         
         /// @cond Private memebers
         Manager(const std::string& uiURL, const std::string& apiURL, const Properties& productInfo, Delegate::weak_ptr delegate);
-        Manager(const std::string& uiURL, const std::string& offlineUIURL, const std::string& apiURL, const Properties& productInfo, Delegate::weak_ptr delegate);
         class Impl;
         std::shared_ptr<Impl> impl;
         /// @endcond
