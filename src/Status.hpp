@@ -35,17 +35,6 @@ namespace ISUL {
          */
         virtual std::string GetDescription() const = 0;
         
-        /*!
-            @brief Check if status contains expiration status
-            @return true if license if about to expire or false if not
-         */
-        virtual bool IsAboutToExpire() const = 0;
-
-        /*!
-            @brief Get the expired date
-            @return date
-         */
-        virtual int64_t GetExpiredDate() const = 0;
     };
 
 }
