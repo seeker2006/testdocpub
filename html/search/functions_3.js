@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['initwithui_3aapi_3aproductinfo_3adelegate_3a_85',['initWithUI:api:productInfo:delegate:',['../interface_i_s_u_l_manager.html#a838c9b48013b7527f302d2a55bbf3ab8',1,'ISULManager']]],
+  ['isabouttoexpire_86',['IsAboutToExpire',['../struct_i_s_u_l_1_1_status.html#a834ee0cbf8833a4112c743b14dd22e5a',1,'ISUL::Status']]],
+  ['isul_5fdelegatecreate_87',['ISUL_DelegateCreate',['../_i_s_u_l___c_8h.html#a4b45369d23bb007cf1a2acd2ea6b9481',1,'ISUL_C.h']]],
+  ['isul_5fdelegatedispose_88',['ISUL_DelegateDispose',['../_i_s_u_l___c_8h.html#a8775de07a0d12ccf8c49e80fce5555ef',1,'ISUL_C.h']]],
+  ['isul_5fmanagercopylicenseinfo_89',['ISUL_ManagerCopyLicenseInfo',['../_i_s_u_l___c_8h.html#a7fbcf723fa6c141b9714aec3b4541162',1,'ISUL_C.h']]],
+  ['isul_5fmanagercreate_90',['ISUL_ManagerCreate',['../_i_s_u_l___c_8h.html#a68ae3712fbfc113eebb9b5f49ba1c057',1,'ISUL_C.h']]],
+  ['isul_5fmanagerdeactivate_91',['ISUL_ManagerDeactivate',['../_i_s_u_l___c_8h.html#ab14b1797bdc3031387cc40be88934a4f',1,'ISUL_C.h']]],
+  ['isul_5fmanagerdispose_92',['ISUL_ManagerDispose',['../_i_s_u_l___c_8h.html#a859d9b7eb9bd43a013da2fe40af31f0f',1,'ISUL_C.h']]],
+  ['isul_5fmanagergetnumberofthirdpartylicenses_93',['ISUL_ManagerGetNumberOfThirdPartyLicenses',['../_i_s_u_l___c_8h.html#a11af93d142625bd510c26654c79f3d13',1,'ISUL_C.h']]],
+  ['isul_5fmanagergetthirdpartylicense_94',['ISUL_ManagerGetThirdPartyLicense',['../_i_s_u_l___c_8h.html#a90706fe9fce863b94f5b8b0ff2bf3abb',1,'ISUL_C.h']]],
+  ['isul_5fmanagervalidate_95',['ISUL_ManagerValidate',['../_i_s_u_l___c_8h.html#a57a806cd719ee6ac6f63b9f212aaea12',1,'ISUL_C.h']]],
+  ['isul_5fpropertiescreate_96',['ISUL_PropertiesCreate',['../_i_s_u_l___c_8h.html#aeaa3f1b326364e44f74c5bf3aed9ad5e',1,'ISUL_C.h']]],
+  ['isul_5fpropertiesdispose_97',['ISUL_PropertiesDispose',['../_i_s_u_l___c_8h.html#a6f52af1612110edfb655f8f131002a29',1,'ISUL_C.h']]],
+  ['isul_5fpropertiesgetvalue_98',['ISUL_PropertiesGetValue',['../_i_s_u_l___c_8h.html#aa75a46e8afe18c59056f96f867741787',1,'ISUL_C.h']]],
+  ['isul_5fpropertiessetvalue_99',['ISUL_PropertiesSetValue',['../_i_s_u_l___c_8h.html#a6aa2e48d0919f19c4c88602f1b377666',1,'ISUL_C.h']]],
+  ['isul_5fthirdpartylicensegetcopyright_100',['ISUL_ThirdPartyLicenseGetCopyright',['../_i_s_u_l___c_8h.html#a3a5b1aab2716eeb2795ceb7f8f8534b8',1,'ISUL_C.h']]],
+  ['isul_5fthirdpartylicensegetlicensetext_101',['ISUL_ThirdPartyLicenseGetLicenseText',['../_i_s_u_l___c_8h.html#a9697f24e751af04d4c7f4fe9201b3016',1,'ISUL_C.h']]],
+  ['isul_5fthirdpartylicensegetlicensetype_102',['ISUL_ThirdPartyLicenseGetLicenseType',['../_i_s_u_l___c_8h.html#af613b14d1b5c57e1db1fab19582708d2',1,'ISUL_C.h']]],
+  ['isul_5fthirdpartylicensegetname_103',['ISUL_ThirdPartyLicenseGetName',['../_i_s_u_l___c_8h.html#ab6a343150ccac1768ab6cf812dd74e48',1,'ISUL_C.h']]],
+  ['isul_5fthirdpartylicensegeturl_104',['ISUL_ThirdPartyLicenseGetURL',['../_i_s_u_l___c_8h.html#a5f14668d5e58a2aebca09ff29ed8b0bb',1,'ISUL_C.h']]]
+];
