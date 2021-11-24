@@ -2,6 +2,8 @@
 
 # -- Project information
 
+import subprocess
+
 project = 'Lumache'
 copyright = '2021, Graziella'
 author = 'Graziella'
@@ -35,3 +37,5 @@ html_theme = 'sphinx_rtd_theme'
 epub_show_urls = 'footnote'
 
 html_extra_path = ['../../html']
+
+subprocess.call('cd .. ; doxygen isul.doxygen', shell=True)
